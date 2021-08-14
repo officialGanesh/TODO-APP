@@ -25,16 +25,16 @@
     <div class="container">
         <form>
             <div class="form-group">
-              <label for="task">Task</label>
+              <label for="task">Title</label>
               <input type="text" class="form-control" id="task" placeholder="Enter Task 📛">
               
             </div>
             <div class="form-group">
-              <label for="desc">Task Description</label>
+              <label for="desc">Short Description</label>
               <input type="text" class="form-control" id="desc" placeholder="Description 📄">
             </div>
             
-            <button type="submit" class="btn btn-primary mb-2">Add</button>
+            <button type="button" class="btn btn-primary mb-2" id="btn">Add</button>
         </form>   
 
     </div>
@@ -42,17 +42,9 @@
     <br>
 
     <!-- Generating using javascript -->
-    <div class="container">
-
-    <div class="list-group-item">
-      <label class="list-group pl-2" style="display: inline-block;">
-        <input class="form-check-input me-1 p-2" type="checkbox">First checkbox
-
-      </label>
-    </div>    
-
+    <div id="box" class="container">
+      <h3>Your Tasks</h3>
   </div>
-
 </body>
 <!-- !Javascript -->
 <script src="todo.js"></script>
