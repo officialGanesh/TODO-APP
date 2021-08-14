@@ -16,7 +16,9 @@ btn.addEventListener("click",function(){
         show_tasks()
         task.value = ""
         desc.value = ""
+        
     }
+
 
 });
 
