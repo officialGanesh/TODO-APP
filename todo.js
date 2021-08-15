@@ -12,6 +12,7 @@ btn.addEventListener("click",function(){
     if(task.value==="" || desc.value===""){
         alert("Property is missing")
     }else{
+        
         console.log("Got your task")
         show_tasks()
         task.value = ""
@@ -19,22 +20,28 @@ btn.addEventListener("click",function(){
         
     }
 
-
 });
 
 function show_tasks(){
 
     let element = document.createElement("div");
-    let html = ""
+    let html = "";
     html+=`
-    <div class="list-group-item mb-2">
-    <label class="list-group pl-2" style="display: inline-block;">
-        <input class="form-check-input me-1 p-2" type="checkbox">${task.value}
-    </label>
+    <div class="card text-white bg-dark mb-3 mt-4 mx-3 my-4" style="width: 10rem; text-align:center;">
+    <div class="card-header">${task.value}</div>
+    <div class="card-body">
+        <p class="card-text">${desc.value}</p> 
+    </div>
+    <button type="button" class="btn btn-danger" style="margin:1rem;">Delete</button>
     </div>`
     
     element.innerHTML = html 
-    box.append(element)
+    box.append(element);
+
 };
+
+
+
+
 
 
