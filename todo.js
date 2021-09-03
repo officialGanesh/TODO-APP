@@ -30,7 +30,7 @@ function show_tasks(){
     <div class="card-body">
         <p class="card-text">${desc.value}</p> 
     </div>
-    <button type="button" class="btn btn-danger completed" style="margin:1rem;">Finish</button>
+    <button type="button" class="btn btn-danger completed" style="margin:1rem;">Delete</button>
     </div>`
     
     element.innerHTML = html 
@@ -47,8 +47,8 @@ function delete_todo(){
         e.addEventListener("click",function(){
         
             e.setAttribute('style',"margin:1rem; background-color:green; color:white; text-align:center; padding:3px; border-radius:3px;")
-            e.setAttribute('class',"disabled")
-            e.innerHTML = "Task Completed"
+            e.parentElement.remove()
+            
 
         })
     })
